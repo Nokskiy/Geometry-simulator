@@ -3,20 +3,19 @@
 > The project is currently in the active development stage. The README file is also unfinished.
 
 > [!TIP]
-- [ABOUT](#about)
-    - [Project concept](#project-concept)
-    - [Language](#language)
-    - [Libraries](#libraries)
-    - [Build](#build)
-        - [How to build](#how-to-build)
-- [INSTALL](#install)
-- [CONTRIBUTION](#contribution)
-    - [Issues](#issues)
-    - [Pull Requests](#pull-requests)
-    - [Discussions](#discussions)
+>
+> - [ABOUT](#about)
+>   - [Project concept](#project-concept)
+>    - [Language](#language)
+>    - [Libraries](#libraries)
+>    - [Build](#build)
+>        - [How to build](#how-to-build)
+>- [INSTALL](#install)
+>- [CONTRIBUTION](#contribution)
+>    - [Issues](#issues)
+>    - [Pull Requests](#pull-requests)
+>    - [Discussions](#discussions)
 
-
-> [!NOTE]
 ## ABOUT
 ### Project concept
 The project is a geometry simulation program.
@@ -51,7 +50,6 @@ Open your terminal and run:
 
     `https://github.com/Nokskiy/Geometry-simulator.git` - HTTPS key
 
-> [!TIP]
 ## [CONTRIBUTION](https://github.com/Nokskiy/Geometry-simulator/blob/main/CONTRIBUTING.md)
 We welcome contributions from the community! Here's how you can help improve this project:
 
