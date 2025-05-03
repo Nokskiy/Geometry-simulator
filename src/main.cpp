@@ -24,8 +24,8 @@ int main()
 {
     INIT_SETTINGS;
 
-    POINT p({1,1});
-    POINT p1({50,50});
+    POINT p({1,1},"С");
+    POINT p1({50,50},"D");
     
     SPAWN_POINT(p);
     SPAWN_POINT(p1);

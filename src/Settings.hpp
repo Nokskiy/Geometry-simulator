@@ -5,6 +5,7 @@
 #include "nlohmann/json.hpp"
 #include <fstream>
 #include <iostream>
+#include "raylib.h"
 
 using namespace std;
 using json = nlohmann::json;
@@ -14,7 +15,7 @@ namespace Simulator
     static class Settings
     {
     private:
-        inline static map<string,float> _data = {{"position_mult",5}};
+        inline static map<string,float> _data = {{"position_mult",5},{"font_size",32}};
 
     public:
         static void Init()
@@ -22,9 +23,9 @@ namespace Simulator
             GetSettings();
         }
 
-        static void WriteSettings()
+        static void WriteSettings(map<string,float> newData)
         {
-            _data["position_mult"] = 5;
+            _data = newData;
             
             json j = _data;
             
@@ -43,11 +44,23 @@ namespace Simulator
             }
             else
             {
-                WriteSettings();
+                FirstWrite();
             }
         }
 
-        static float ReadSettings(string key)
+        static void FirstWrite()
+        {
+            _data["position_mult"] = 5;
+            _data["font_size"] = 32;
+
+            json j = _data;
+            
+            ofstream out("data.json");
+            out << j.dump(4);
+            out.close();
+        }
+
+        static auto ReadSettings(string key)
         {
             return _data[key];
         }

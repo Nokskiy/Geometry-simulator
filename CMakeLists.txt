@@ -16,4 +16,6 @@ add_executable(main src/main.cpp)
 
 include_directories(nlohmann/json/include)
 
+file(COPY assets/ DESTINATION ${CMAKE_BINARY_DIR}/assets)
+
 target_link_libraries(main PRIVATE raylib)
