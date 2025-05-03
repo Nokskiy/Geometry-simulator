@@ -15,7 +15,7 @@ namespace Simulator
     static class Settings
     {
     private:
-        inline static map<string,float> _data = {{"position_mult",5},{"font_size",32}};
+        inline static map<string, float> _data = { {"position_mult", 5}, {"font_size", 32} };
 
     public:
         static void Init()
@@ -23,12 +23,12 @@ namespace Simulator
             GetSettings();
         }
 
-        static void WriteSettings(map<string,float> newData)
+        static void WriteSettings(map<string, float> newData)
         {
             _data = newData;
-            
+
             json j = _data;
-            
+
             ofstream out("data.json");
             out << j.dump(4);
             out.close();
@@ -36,10 +36,10 @@ namespace Simulator
 
         static void GetSettings()
         {
-            if(filesystem::exists("data.json"))
+            if (filesystem::exists("data.json"))
             {
                 fstream out("data.json");
-            
+
                 _data = json::parse(out);
             }
             else
@@ -54,7 +54,7 @@ namespace Simulator
             _data["font_size"] = 32;
 
             json j = _data;
-            
+
             ofstream out("data.json");
             out << j.dump(4);
             out.close();

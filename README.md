@@ -15,6 +15,7 @@
 >    - [Issues](#issues)
 >    - [Pull Requests](#pull-requests)
 >    - [Discussions](#discussions)
+>- [UPCOMING TASKS](#upcoming-tasks)
 
 ## ABOUT
 ### Project concept
@@ -78,3 +79,8 @@ We welcome contributions from the community! Here's how you can help improve thi
 - Ask usage questions
 
 - Share examples/workarounds
+
+## UPCOMING TASKS
+- [x] POINTS
+- [x] SEGMENTS
+- [ ] INTERFACE

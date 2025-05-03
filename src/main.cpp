@@ -5,7 +5,7 @@ using namespace std;
 #pragma region MCR
 
 #pragma region WINDOW
-#define BG_COLOR Color{ 47, 40, 69, 255 }
+#define BG_COLOR Color{47, 40, 69, 255}
 #define WIDTH 900
 #define HEIGHT 900
 #define WINDOW_NAME "GEOMETRY SIMULATOR"
@@ -27,17 +27,17 @@ int main()
 {
     INIT_SETTINGS;
 
-    POINT p({1,1},"С");
-    POINT p1({50,50},"D");
+    POINT p({ 1, 1 }, "С");
+    POINT p1({ 50, 50 }, "D");
 
     SPAWN_POINT(&p);
     SPAWN_POINT(&p1);
 
-    SEGMENT s(&p,&p1);
+    SEGMENT s(&p, &p1);
     SPAWN_SEGMENT(&s);
 
     SetTraceLogLevel(LOG_NONE);
-    InitWindow(WIDTH,HEIGHT,WINDOW_NAME);
+    InitWindow(WIDTH, HEIGHT, WINDOW_NAME);
 
     while (!WindowShouldClose())
     {
@@ -46,7 +46,6 @@ int main()
 
         ClearBackground(BG_COLOR);
         Simulator::Scene::SceneProcess();
-        
 
         EndDrawing();
     }
