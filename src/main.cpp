@@ -14,6 +14,9 @@ using namespace std;
 #pragma region OBJS
 #define POINT Simulator::Point
 #define SPAWN_POINT Simulator::Scene::AddPoint
+
+#define SEGMENT Simulator::Segment
+#define SPAWN_SEGMENT Simulator::Scene::AddSegment
 #pragma endregion OBJS
 
 #define INIT_SETTINGS Simulator::Settings::Init()
@@ -26,15 +29,19 @@ int main()
 
     POINT p({1,1},"С");
     POINT p1({50,50},"D");
-    
-    SPAWN_POINT(p);
-    SPAWN_POINT(p1);
+
+    SPAWN_POINT(&p);
+    SPAWN_POINT(&p1);
+
+    SEGMENT s(&p,&p1);
+    SPAWN_SEGMENT(&s);
 
     SetTraceLogLevel(LOG_NONE);
     InitWindow(WIDTH,HEIGHT,WINDOW_NAME);
 
     while (!WindowShouldClose())
     {
+        p1.position.x += 0.01;
         BeginDrawing();
 
         ClearBackground(BG_COLOR);
