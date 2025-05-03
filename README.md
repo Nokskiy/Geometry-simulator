@@ -22,12 +22,12 @@ The project is a geometry simulation program.
 It is written in __C++__
 
 ### Libraries
-    - Raylib
-    - nlohmann/json
+- [Raylib](https://github.com/raysan5/raylib)
+- [nlohmann/json](https://github.com/nlohmann/json)
 
 ### Build
 
-The project uses CMake for building.
+The project uses [CMake](https://cmake.org/) for building.
 
 #### How to build
 
@@ -40,6 +40,8 @@ Run in terminal
     `cmake --build . --config Release`
 
 ## INSTALL
+Use [git](https://git-scm.com/)
+
 Open your terminal and run:
 
     `git clone https://github.com/Nokskiy/Geometry-simulator.git`
@@ -47,10 +49,10 @@ Open your terminal and run:
     `https://github.com/Nokskiy/Geometry-simulator.git` - HTTPS key
 
 
-## CONTRIBUTION
+## [CONTRIBUTION](https://github.com/Nokskiy/Geometry-simulator/blob/main/CONTRIBUTING.md)
 We welcome contributions from the community! Here's how you can help improve this project:
 
-### Issues
+### [Issues](https://github.com/Nokskiy/Geometry-simulator/issues)
 
 - Reporting bugs (include steps to reproduce, expected vs actual behavior)
 
@@ -58,7 +60,7 @@ We welcome contributions from the community! Here's how you can help improve thi
 
 - Flagging README improvements
 
-### Pull Requests
+### [Pull Requests](https://github.com/Nokskiy/Geometry-simulator/pulls)
 
 - Bug fixes (reference the related issue)
 
@@ -68,7 +70,7 @@ We welcome contributions from the community! Here's how you can help improve thi
 
 - make your own fork
 
-### Discussions
+### [Discussions](https://github.com/Nokskiy/Geometry-simulator/discussions)
 
 - Propose new ideas
 
