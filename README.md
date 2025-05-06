@@ -80,7 +80,8 @@ We welcome contributions from the community! Here's how you can help improve thi
 
 - Share examples/workarounds
 
-## UPCOMING TASKS
+## TASKS
 - [x] POINTS
 - [x] SEGMENTS
+- [x] Camera
 - [ ] INTERFACE

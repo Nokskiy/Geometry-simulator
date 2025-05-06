@@ -17,6 +17,7 @@ using namespace std;
 
 #define SEGMENT Simulator::Segment
 #define SPAWN_SEGMENT Simulator::Scene::AddSegment
+
 #pragma endregion OBJS
 
 #define INIT_SETTINGS Simulator::Settings::Init()
@@ -27,8 +28,8 @@ int main()
 {
     INIT_SETTINGS;
 
-    POINT p({ 1, 1 }, "С");
-    POINT p1({ 50, 50 }, "D");
+    POINT p({1, 1}, "C");
+    POINT p1({50, 50}, "D");
 
     SPAWN_POINT(&p);
     SPAWN_POINT(&p1);
@@ -39,11 +40,13 @@ int main()
     SetTraceLogLevel(LOG_NONE);
     InitWindow(WIDTH, HEIGHT, WINDOW_NAME);
 
+    Simulator::Camera camera = Simulator::Camera();
+    Simulator::Scene::_camera = &camera;
+
     while (!WindowShouldClose())
     {
-        p1.position.x += 0.01;
         BeginDrawing();
-
+        camera.Move();
         ClearBackground(BG_COLOR);
         Simulator::Scene::SceneProcess();
 

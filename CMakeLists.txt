@@ -4,9 +4,9 @@ project(Simulator)
 
 set(CXX_STANDARD 17)
 if(MSVC)
-    add_compile_options(/std:c++17)  # Для MSVC
+    add_compile_options(/std:c++17)
 else()
-    add_compile_options(-std=c++17)  # Для GCC/Clang
+    add_compile_options(-std=c++17)
 endif()
 
 add_subdirectory(raylib)
