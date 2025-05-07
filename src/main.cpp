@@ -43,9 +43,16 @@ int main()
     Simulator::Camera camera = Simulator::Camera();
     Simulator::Scene::_camera = &camera;
 
+    float t = 0;
+
     while (!WindowShouldClose())
     {
-        
+        t+=0.0001f;
+        p1.position.x = (sin(t)) * 50;
+        p1.position.y = (cos(t)) * 50;
+
+        p.position.x = (sin(t + 10)) * 50;
+        p.position.y = (cos(t + 10)) * 50;
         BeginDrawing();
         camera.Move();
         ClearBackground(BG_COLOR);
