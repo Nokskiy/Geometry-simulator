@@ -37,6 +37,7 @@ namespace Simulator
 #pragma region segment
             for (const auto s : _segments)
             {
+                s->SetLenght();
                 DrawLineEx(Vector2{(((s)->points[0])->position.x - (_camera)->position.x) * posMult,
                                    (((s)->points[0])->position.y + (_camera)->position.y) * posMult},
                            Vector2{(((s)->points[1])->position.x - (_camera)->position.x) * posMult,
