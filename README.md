@@ -36,20 +36,26 @@ The project uses [CMake](https://cmake.org/) for building.
 
 Run in terminal
 
-    `mkdir build && cd build`
+**terminal code**
+``` terminal
+mkdir build && cd build
 
-    `cmake ..`
+cmake ..
 
-    `cmake --build . --config Release`
+cmake --build . --config Release
+```
 
 ## INSTALL
 Use [git](https://git-scm.com/)
 
 Open your terminal and run:
 
-    `git clone https://github.com/Nokskiy/Geometry-simulator.git`
+**terminal code**
 
-    `https://github.com/Nokskiy/Geometry-simulator.git` - HTTPS key
+```
+git clone https://github.com/Nokskiy/Geometry-simulator.git
+```
+https://github.com/Nokskiy/Geometry-simulator.git - HTTPS key
 
 ## [CONTRIBUTION](https://github.com/Nokskiy/Geometry-simulator/blob/main/CONTRIBUTING.md)
 We welcome contributions from the community! Here's how you can help improve this project:
