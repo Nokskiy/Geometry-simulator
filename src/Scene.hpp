@@ -10,7 +10,7 @@ using namespace std;
 
 namespace Simulator
 {
-    static class Scene
+    class Scene
     {
     public:
         inline static Camera *_camera;
