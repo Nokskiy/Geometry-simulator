@@ -12,7 +12,7 @@ using json = nlohmann::json;
 
 namespace Simulator
 {
-    static class Settings
+    class Settings
     {
     private:
         inline static map<string, float> _data = { {"position_mult", 5}, {"font_size", 32} };
